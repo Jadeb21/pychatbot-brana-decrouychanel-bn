@@ -11,5 +11,8 @@ def print_list(l):
 def extraire_nom(l):
     list_nom=[]
     for i in l:
-        list_nom.append(i[11:-4])
+        if i[-5]<=chr(90):
+            list_nom.append(i[11:-5])
+        else :
+            list_nom.append(i[11:-4])
     return list_nom
